@@ -10,6 +10,10 @@ Many times large data projects can crash a Jupyter kernel. Pickling a data struc
 
 Pickle plays a part in my data analysis process. In one notebook I scrape, combine and clean data. Once I am comfortable with DataFrame and am ready to start analysis, I pickle the DataFrame and load it into a new notebook.
 
+### What should I pickle something rather than save it as a .csv?
+
+More complex data structures in a dataframe can lose their form. A problem I run into a lot is that a row of `list` types becomes a `string` type of the form `"["item_1",...]"` . 
+
 ## Pickling a thing
 
 Below is my pattern for using pickle to save a data structure. 
