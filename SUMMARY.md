@@ -1,0 +1,23 @@
+# Table of contents
+
+* [Introduction](README.md)
+* [Setup](setup.md)
+* [Starting with Pipenv](starting-with-pipenv.md)
+* [Asyncio Web Crawler](asyncio-web-crawler.md)
+* [Pickling](pickling.md)
+* [Annoy](annoy.md)
+* [Elastic Search AWS](elastic-search-aws.md)
+* [Google Cloud Functions](google-cloud-functions.md)
+* [nteract-papermill](nteract-papermill.md)
+* [Cron](cron.md)
+* [Prefect.io](prefect.io.md)
+* [Hosting](hosting.md)
+* [Web Dev Troubleshooting  Checklist](web-dev-troubleshooting-checklist.md)
+* [PostgreSQL AWS RDS](postgresql-aws-rds.md)
+* [Vaex](vaex.md)
+* [Assorted Tips](assorted-tips.md)
+* [JavaScript, Jinja & FlaskBlog Post](flask-blog-post.md)
+* [Parameter & HyperParameter Tuning with Bayesian Optimization](hyper-parameter-blog-post.md)
+* [Potential Topics](potential-topics.md)
+* [Untitled](untitled.md)
+
