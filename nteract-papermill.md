@@ -28,6 +28,8 @@ This is the first page you see when you go to the Amazaon IAM page. Click on the
 
 Click on _Add User_. 
 
+client = boto3.client\( 9 "s3", 10 aws\_access\_key\_id=config\("AWS\_ACCESS\_KEY\_ID"\), 11 aws\_secret\_access\_key=config\("AWS\_SECRET\_ACCESS\_KEY"\), 12 \)
+
 ![Step 3: Fill out the form to create a new user](.gitbook/assets/iam3.PNG)
 
 Find a new name for yourself and give yourself programmatic access. We need to use the AWS CLI \(command line interface\) to take advantage of papermill. 
@@ -39,13 +41,13 @@ Click on through the review until you see the _Success_ screen.
 
 ![Step 5: Get Your Credentials](.gitbook/assets/iam5.PNG)
 
-At this screen, you have the option to download your Access key ID and Secret access key as .csv file. You can only view these online while this window is open. So make sure to download these keys or save them somewhere you can trust. 
+At this screen, you have the option to download your Access key ID and Secret access key as .csv file. You can only view these online while this window is open. So make sure to download these keys and save them somewhere you can trust. 
 
-![Step 6: Set up awscli](.gitbook/assets/aws-configure.PNG)
+## Running Papermill with a bash script
 
 To finally get this stuff working type `aws configure` in your terminal. Enter your Access Key ID and Secret Access Key where appropriate. There are other prompts after those two such as default region. Set those up if you really need to, but since I am in the U.S. I am fine with the defaults.
 
-## Running Papermill
+![](.gitbook/assets/aws-configure.PNG)
 
 #### Now that we have the setup ready, let's get papermill running. 
 
@@ -53,4 +55,28 @@ If you have a notebook you want to run you can use that, if not, you can use thi
 The command to run my simple test is a one liner. Since I am in my the directory with my notebook the command is: `papermill papermill_aws_permissions_test.ipynb s3://python-portfolio/saved-notebooks/save.ipynb`
 
 You can navigate to the folder you specified in the `s3` address. the command will make a folder for you, if you haven't made one in the S3 console. 
+
+## Running Papermill with a python script.
+
+```python
+import boto3
+from decouple import config
+# setup the aws connection 
+client = boto3.client(
+     "s3",
+     aws_access_key_id=config("AWS_ACCESS_KEY_ID"),
+     aws_secret_access_key=config("AWS_SECRET_ACCESS_KEY"),
+)
+now = datetime.datetime.now()
+pm.execute_notebook(
+             "notebook_to_run.ipynb",
+              "s3://notebooks/updates/test"
+              + str(now.year)
+              + "-"
+              + str(now.month)
+              + "-"
+              + str(now.day)
+              + ".ipynb",
+          )
+```
 

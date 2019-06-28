@@ -77,3 +77,13 @@ this tutorial assumes you have used github or a similar product for version cont
 
 If you have used a pipenv environment in development of your project, you can just follow the guide in the chapter Starting with Pipenv.
 
+### Step 11. Remember to add your .env variables
+
+If your project uses environment variables remember to transfer them to your new environment. I just copy and pasted them from a local directory into the ec2 terminal.
+
+## Run Your program
+
+Using my Prefect.io etl app. I can just run `pipenv run python etl.py` and the app will schedule the papermill app and run it at the designated times.
+
+
+
