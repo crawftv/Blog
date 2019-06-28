@@ -51,8 +51,8 @@ Go to your instance dashboard by clicking the link on Running Instances or Insta
 
 #### Find your IPv4 Address
 
-  
-‌  
+![Find your IPv4 Public IP to connect with](.gitbook/assets/ec2_6.PNG)
+
 Your IPv4 address should be of the form xxx.xxx.xxx.xxx or 127.0.0.0. Max of 3 digits between each each dot, sometimes its just 1 or two digits.  
 
 
@@ -70,15 +70,9 @@ If you are successful, your terminal should match the below picture
 
 ### Step 9. Set up your project
 
-  
-‌  
-this tutorial assumes you have used github or a similar product for version control. So you can simply run git clone your\_repo.git to create your new folder.  
-‌  
-
+this tutorial assumes you have used github or a similar product for version control. So you can simply run git clone your\_repo.git to create your new folder.
 
 ### Step 10. Set up your environment
 
-  
-‌  
 If you have used a pipenv environment in development of your project, you can just follow the guide in the chapter Starting with Pipenv.
 
