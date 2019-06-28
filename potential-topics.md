@@ -9,7 +9,7 @@
 * [ ] google cloud function
 * [x] nteract-papermill
 * [ ] cron
-* [ ] Prefect io
+* [x] Prefect io
 * [ ] Hosting
 * [ ] Web dev
 * [x] postgres aws
