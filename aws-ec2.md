@@ -32,13 +32,14 @@ AWS should stop you from launching your instance before you set up your ec2 inst
 
 You can create a new pair of ssh keys or associate your instance with an existing pair of keys if you have some already.
 
-![](.gitbook/assets/ec2_55.PNG)
+![](.gitbook/assets/ec2_5.PNG)
 
 ## Connecting to Your Instance
 
 ### Optional Step. Move your new ssh key into your project directory
 
-This step isn't necessary but I did it so I could stay organized and make the upcoming commands easier. 
+This step isn't necessary but I did it so I could stay organized and make the upcoming commands easier. I used my GUI window explorer to move my keys from my downloads folder to my project repo.   
+If you don't know what your are looking for, the file should be called _whatever-you-named-your-keys-in -step-5.pem_
 
 ### Step 7. Find your IPv4 address
 
