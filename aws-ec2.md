@@ -58,18 +58,15 @@ Your IPv4 address should be of the form xxx.xxx.xxx.xxx or 127.0.0.0. Max of 3 d
 
 ### Step 8. Use ssh to connect to your instance
 
-  
-‌  
-Now you have your IPv4 address and know where your ssh\_keys are saved. Run the command below.  
+Now you have your IPv4 address and know where your ssh\_keys are saved. Run the command below.
 
-
-```text
+```bash
 sudo ssh - i path/to/ssh/key.pem ubuntu@xxx.xxx.xxx.xxx
 ```
 
-  
-‌  
 If you are successful, your terminal should match the below picture
+
+![](.gitbook/assets/ec2_8.PNG)
 
 ### Step 9. Set up your project
 
