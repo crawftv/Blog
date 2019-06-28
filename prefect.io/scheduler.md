@@ -27,7 +27,7 @@ task.run()
 
 ## Running
 
-Since I use a pipenv environment, i do `pipenv run python etl.py` . The terminal should look like this. \(Although it wont look exactly like a code file with the numbers, YYYY-MM-DD will be replaced by actual dates, etc.\)
+Since I use a pipenv environment, i do `pipenv run python etl.py` in my terminal. The terminal should look like this. \(Although it wont look exactly like a code file with the numbers, YYYY-MM-DD will be replaced by actual dates, etc.\)
 
 ```text
 ubuntu@ip-xxx-xxx-xxx-xxx:~/hn_app$ pipenv run python etl/etl.py
