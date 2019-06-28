@@ -7,14 +7,14 @@ If you are trying to deploy your work to a small server, serverless, or Heroku, 
 
 ## Pre-Install and Installation
 
-1. Run `python3 --version` to see if you have python3 installed
-   1. if you do not, run `sudo apt-get update` 
-   2. Then run  `sudo apt-get install python3.x` where x is whatever version of python you would like. Right now it would be `python3.6` or `python3.7` 
-2. After you know you have a modern version of python, run `sudo apt-get install python3-distutils` . If you do not add this library, there is a good chance pipenv will not work for you.
-3. Install pip3 with `sudo apt install python3-pip` with out the `pip3` library, your system might try to rectify your new python3 packages with the python2.7 environment that ships with most operating systems. That will cause problems later on.
-4. install pipenv with `pip3 install pipenv` 
-5. To create the virtual environment run `pipenv --three` to ensure your environment uses your python3.
-6. to activate and enter your new environment run `pipenv shell` 
+1. If you do not, run `sudo apt-get update` 
+2. Run `python3 --version` to see if you have python3 installed
+   1. Then run  `sudo apt-get install python3.x` where x is whatever version of python you would like. Right now it would be `python3.6` or `python3.7` 
+3. After you know you have a modern version of python, run `sudo apt-get install python3-distutils` . If you do not add this library, there is a good chance pipenv will not work for you.
+4. Install pip3 with `sudo apt install python3-pip` with out the `pip3` library, your system might try to rectify your new python3 packages with the python2.7 environment that ships with most operating systems. That will cause problems later on.
+5. install pipenv with `sudo -H pip3 install -U pipenv` .
+6. To create the virtual environment run `pipenv --three` to ensure your environment uses your python3.
+7. to activate and enter your new environment run `pipenv shell` 
 
 If your Pipfile & Pipfile.lock are included in source control \(git\), after you clone a repo, you can just start the shell and run `pipenv install` to get the same environment you were using on a different computer. 
 
