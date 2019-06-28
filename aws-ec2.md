@@ -30,34 +30,22 @@ AWS should stop you from launching your instance before you set up your ec2 inst
 
 ### Step 5. Download a new or existing pair of ssh keys.
 
-  
-‌  
-You can create a new pair of ssh keys or associate your instance with an existing pair of keys if you have some already.  
+You can create a new pair of ssh keys or associate your instance with an existing pair of keys if you have some already.
 
+![](.gitbook/assets/ec2_55.PNG)
 
 ## Connecting to Your Instance
 
-  
-‌  
-
-
 ### Optional Step. Move your new ssh key into your project directory
 
-  
-‌  
-This step isn't necessary but I did it so I could stay organized and make the upcoming commands easier. If you are having trouble making  
-
+This step isn't necessary but I did it so I could stay organized and make the upcoming commands easier. 
 
 ### Step 7. Find your IPv4 address
 
-  
-‌  
-
-
 #### Find your instance from the EC2 dashboard.
 
-  
-‌  
+![](.gitbook/assets/ec2_55%20%281%29.PNG)
+
 Go to your instance dashboard by clicking the link on Running Instances or Instances.  
 
 
