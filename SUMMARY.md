@@ -12,6 +12,7 @@
 * [Cron](cron.md)
 * [Prefect.io](prefect.io.md)
 * [Hosting](hosting.md)
+* [AWS EC2](aws-ec2.md)
 * [Web Dev Troubleshooting  Checklist](web-dev-troubleshooting-checklist.md)
 * [PostgreSQL AWS RDS](postgresql-aws-rds.md)
 * [Vaex](vaex.md)

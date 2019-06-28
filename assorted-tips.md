@@ -20,5 +20,8 @@ This line of code fixes that:
 
 ```bash
 sudo apt-get install libpq-dev python-dev
+# OR The two commands below
+pipenv uninstall psycopg2
+pipenv install psycopg2
 ```
 
