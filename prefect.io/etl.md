@@ -4,6 +4,11 @@ description: 'Extract, Transform, and Load'
 
 # ETL
 
+### What is ETL?
+
+ETL is a term meaning Extract, Transform, Load. It is used when there a routine for pulling data, cleaning it, and saving/analyzing it.  
+I thin the Prefect Library is great for some simple ETL. 
+
 ### Template for Prefect ETL
 
 This code basically comes from the docs
