@@ -63,8 +63,6 @@ Finally, we can start our search. This example changes many of the default param
 
 ![DataFrame summarizing parameter search](.gitbook/assets/1_twkvx6qh2trnazao0picrg-1.png)
 
-Lets see how our search performed. gp\_result.fun returns our best accuracy, which was 97.21%. **What was the range of our search?** dataframe summarizing parameter search
-
 One last thing for our Gaussian Process model. We need to try it on the test data. So we use our create\_model function to recreate our best model. Then we retrain and evaluate. Our final test accuracy is… **98.09%**.
 
 {% embed url="https://gist.github.com/crawftv/12d83d6b95e002708744a665bbdb2994\#file-skopt-gp-test-py" %}

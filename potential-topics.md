@@ -9,6 +9,7 @@
 * [ ] google cloud function
 * [x] nteract-papermill
 * [ ] cron
+* [ ] sklearn models in production
 * [x] Prefect io
 * [ ] Hosting
 * [ ] Web dev
