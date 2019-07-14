@@ -92,7 +92,7 @@ This is the window that pops up after clicking on the "Edit button". Click on "A
 **Port Range** = 6432   
 **Source:** You can select "My IP" for local work. If you need to connect from an app you can add it after selecting Custom.
 
-![Give your own IP&apos;s access.](.gitbook/assets/rds12.PNG)
+![](.gitbook/assets/rds12.PNG)
 
 ## Tips
 
