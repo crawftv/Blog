@@ -9,7 +9,6 @@
 * [ ] google cloud function
 * [x] nteract-papermill
 * [ ] cron
-* [ ] sklearn models in production
 * [x] Prefect io
 * [ ] Hosting
 * [ ] Web dev
@@ -18,4 +17,5 @@
 * [ ] tips
 * [x] flask, jinja, javascript
 * [x] hyperparameters. 
+* [ ] Deploying a sklearn model with a flask app.
 
