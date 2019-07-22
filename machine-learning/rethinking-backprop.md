@@ -1,21 +1,19 @@
+---
+description: and make your own neural net framework.
+---
+
 # Rethinking Backprop
-
-
-
-## Rethinking Backprop
-
-#### and make your own neural net framework.
 
 ### Why another guide?
 
-* Most guides are bad. Take it from me, a guy who has tried them all. Most of the code is very unhelpful. Usually its a combination of poor math explanations and code that just barely works. 
+* Most guides are bad. Take it from me, a guy who has tried them all. The code is unhelpful. Usually its a combination of poor math explanations and code that just barely works. 
 * "example" neural nets are the only time anyone tries to use functional programming paradigms, despite trying to make everyone conceptualize the layers as objects.
 * This guide does a better job of connecting the math to the code. 
 * This code should more closely resemble the code found in top libraries and scales better than most examples.
 
-  **Hints for reading.**
+**Hints for reading.**
 
-  This takes a long time to understand. It may takes a lot of rereading and drawing out notes to fully understand backprop.
+This takes a long time to understand. It may takes a lot of rereading and drawing out notes to fully understand backprop.
 
 Backward propagation of errors is easy to understand in the basic form of "it's just passing the error rate through all the layers." But a deeper understanding is much more difficult.  
 $$\delta l = \sum ' (z^l)(w^{l+1})...\sum ' (z^{L-1})(w^{L})\sum ' (z^{L})\nabla_a C$$ and $$\delta_j^L = \frac{\partial C}{\partial a_k^L} \frac{\partial a_k^L}{\partial z_J^L}$$   
@@ -25,7 +23,7 @@ The above is not as difficult as it looks.
 
 * Cost: this often means the sum of all the error for each prediction.
 
-## Feedforward
+## Feed forward
 
 Individual Layer
 
@@ -35,7 +33,7 @@ This is for one layer of the neural net. $$a^l = \sigma (w^l a^{l-1} +b^l)$$
 
 #### Math Components
 
-* $$a^l$$$ is the activation vector of the current layer
+* $$a^l$$is the activation vector of the current layer
 * z is the sum of multiplying the weights of the nodes times the input, and adding the bias 
 * $$ z = \sum w^l \cdot a^{l-1} + b^l $$
 * $$a^{l-1}$$ is the activation vector from the previous layer
@@ -87,12 +85,12 @@ $$z = w^l \cdot a^{l-1} + b^l$$
 
 ## Backward Propagation of Errors
 
-Backprop is just using the sum of all the error from the function to updatethe weights of the different layers.
+Backprop is just using the sum of all the error from the function to update the weights of the different layers.
 
 #### Components
 
 * $$\delta^L $$ is the output error, the true values minus the predicted values.
-* $$\partial $$ designates the partial derivate of a function
+* $$\partial $$ designates the partial derivative of a function
 * $$z$$ & $$a$$ are the outputs and the activations of those outputs.
 
 #### Starting with the last layer and some simplified math.
@@ -118,7 +116,7 @@ So each layer is connected to it's upper layer and the error rate is passed back
 #### Components
 
 * $$\eta $$ is the learning rate
-* $$\mu $$ is the number of samples going through the aloritm at the time, i.e. the size of the minibatch or the size of the of the data in the NAND Gate example.
+* $$\mu $$ is the number of samples going through the algorithm at the time, i.e. the size of the minibatch or the size of the of the data in the NAND Gate example.
 
 #### Math
 
@@ -128,7 +126,7 @@ Starting with $$\delta^{L-1} = \sum w^L \delta^L \sigma ' (z^{L-1}) $$ as an exa
 
 #### Notes
 
-In code I use `harp` where $\nabla$ would be used in math
+In code I use `harp` where $$\nabla$$ would be used in math
 
 ```text
 class OutputLayer:
