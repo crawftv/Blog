@@ -1,10 +1,8 @@
+---
+description: and make your own neural net framework.
+---
+
 # Rethinking Backprop
-
-[Setup](https://app.gitbook.com/@crawford-collins/s/ds-book/setup)
-
-## Rethinking Backprop
-
-#### and make your own neural net framework.
 
 ### Why another guide?
 
@@ -13,9 +11,9 @@
 * This guide does a better job of connecting the math to the code. 
 * This code should more closely resemble the code found in top libraries and scales better than most examples.
 
-  **Hints for reading.**
+**Hints for reading.**
 
-  This takes a long time to understand. It may takes a lot of rereading and drawing out notes to fully understand backprop.
+This takes a long time to understand. It may takes a lot of rereading and drawing out notes to fully understand backprop.
 
 Backward propagation of errors is easy to understand in the basic form of "it's just passing the error rate through all the layers." But a deeper understanding is much more difficult.  
 $$\delta l = \sum ' (z^l)(w^{l+1})...\sum ' (z^{L-1})(w^{L})\sum ' (z^{L})\nabla_a C$$ and $$\delta_j^L = \frac{\partial C}{\partial a_k^L} \frac{\partial a_k^L}{\partial z_J^L}$$   
@@ -25,7 +23,7 @@ The above is not as difficult as it looks.
 
 * Cost: this often means the sum of all the error for each prediction.
 
-## Feedforward
+## Feed forward
 
 Individual Layer
 
@@ -60,12 +58,12 @@ class InputLayer:
     self.z = input_data
 class HiddenLayer:
     def feedforward(self):
-        self.S = np.dot(self.upper_layer.z, self.weights) + self.bias
-        self.z = 1/(1+np.exp(-self.S))
+        self.z = np.dot(self.upper_layer.S, self.weights) + self.bias
+        self.S = 1/(1+np.exp(-self.z))
 class OutputLayer:
      def feedforward(self):
-         self.S = np.dot(self.upper_layer.z,self.weights) + self.bias
-         self.z = 1/(1+np.exp(-self.S))
+         self.z = np.dot(self.upper_layer.S,self.weights) + self.bias
+         self.S = 1/(1+np.exp(-self.z))
 ```
 
 ```python
@@ -79,8 +77,8 @@ l2.feedforward()
 #### Matching the code with the math
 
 ```python
-self.S = np.dot(self.upper_layer.z, self.weights) + self.bias
-self.z = 1/(1+np.exp(-self.S))
+self.z = np.dot(self.upper_layer.S, self.weights) + self.bias
+self.S = 1/(1+np.exp(-self.z))
 ```
 
 $$z = w^l \cdot a^{l-1} + b^l$$
@@ -133,10 +131,10 @@ In code I use `harp` where $$\nabla$$ would be used in math
 ```text
 class OutputLayer:
     def backprop(self,y):
-        self.delta = (self.z - y) * self.activation_function_derivative(self.z)
+        self.delta = (self.S - y) * self.activation_function_derivative(self.z)
         #uses harp becuase the word nabla weirds me out. nabla is the ∇
         self.harp_b = self.delta
-        self.harp_w = self.upper_layer.z.T @ self.delta
+        self.harp_w = self.upper_layer.S.T @ self.delta
         self.weights = self.weights + (self.learning_rate/self.delta.shape[0]) * self.harp_w
         self.bias = self.bias + (self.learning_rate/self.delta.shape[0]) * self.harp_b
 ```
@@ -144,12 +142,12 @@ class OutputLayer:
 #### Output layer error
 
 $$ \delta^L = \nabla_a C ⊙ \sigma ' (z^L) $$  
-`self.delta = (self.z - y) * self.activation_function_derivative(self.z)`
+`self.delta = (self.S - y) * self.activation_function_derivative(self.S)`
 
 #### gradient of weights and biases
 
 $$ \sum w^L \delta^L \sigma ' (z^{L-1}) $$  
-`self.harp_w = self.upper_layer.z.T @ self.delta`  
+`self.harp_w = self.upper_layer.S.T @ self.delta`  
 `self.harp_b = self.delta`
 
 #### Updating the weights
