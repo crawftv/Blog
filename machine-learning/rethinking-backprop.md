@@ -1,8 +1,10 @@
----
-description: and make your own neural net framework.
----
-
 # Rethinking Backprop
+
+[Setup](https://app.gitbook.com/@crawford-collins/s/ds-book/setup)
+
+## Rethinking Backprop
+
+#### and make your own neural net framework.
 
 ### Why another guide?
 
@@ -11,9 +13,9 @@ description: and make your own neural net framework.
 * This guide does a better job of connecting the math to the code. 
 * This code should more closely resemble the code found in top libraries and scales better than most examples.
 
-**Hints for reading.**
+  **Hints for reading.**
 
-This takes a long time to understand. It may takes a lot of rereading and drawing out notes to fully understand backprop.
+  This takes a long time to understand. It may takes a lot of rereading and drawing out notes to fully understand backprop.
 
 Backward propagation of errors is easy to understand in the basic form of "it's just passing the error rate through all the layers." But a deeper understanding is much more difficult.  
 $$\delta l = \sum ' (z^l)(w^{l+1})...\sum ' (z^{L-1})(w^{L})\sum ' (z^{L})\nabla_a C$$ and $$\delta_j^L = \frac{\partial C}{\partial a_k^L} \frac{\partial a_k^L}{\partial z_J^L}$$   
@@ -23,7 +25,7 @@ The above is not as difficult as it looks.
 
 * Cost: this often means the sum of all the error for each prediction.
 
-## Feed forward
+## Feedforward
 
 Individual Layer
 
