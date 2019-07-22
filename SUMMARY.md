@@ -24,4 +24,6 @@
 * [Parameter & HyperParameter Tuning with Bayesian Optimization](hyper-parameter-blog-post.md)
 * [Potential Topics](potential-topics.md)
 * [Untitled](untitled.md)
+* [Machine Learning](machine-learning/README.md)
+  * [Rethinking Backprop](machine-learning/rethinking-backprop.md)
 
