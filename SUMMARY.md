@@ -26,4 +26,6 @@
 * [Untitled](untitled.md)
 * [Machine Learning](machine-learning/README.md)
   * [Rethinking Backprop](machine-learning/rethinking-backprop.md)
+  * [SVD](machine-learning/svd.md)
+* [Approximate Nearest Neighbors](approximate-nearest-neighbors.md)
 
