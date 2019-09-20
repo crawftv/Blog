@@ -15,6 +15,7 @@
   * [ETL](prefect.io/etl.md)
 * [Hosting](hosting.md)
 * [AWS EC2](aws-ec2/README.md)
+  * [Trouble Shooting](aws-ec2/trouble-shooting.md)
   * [Set Up EC2](aws-ec2/set-up-ec2.md)
 * [Web Dev Troubleshooting  Checklist](web-dev-troubleshooting-checklist.md)
 * [PostgreSQL AWS RDS](postgresql-aws-rds.md)
