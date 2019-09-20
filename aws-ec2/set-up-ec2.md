@@ -49,7 +49,7 @@ Your IPv4 address should be of the form xxx.xxx.xxx.xxx or 127.0.0.0. Max of 3 d
 Now you have your IPv4 address and know where your ssh\_keys are saved. Run the command below.
 
 ```text
-sudo ssh - i path/to/ssh/key.pem ubuntu@xxx.xxx.xxx.xxx
+sudo ssh -i path/to/ssh/key.pem ubuntu@xxx.xxx.xxx.xxx
 ```
 
 If you are successful, your terminal should match the below picture​![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LfHjgZuHVs1RRcggVZn%2F-LiROEM1INI4GGjST-ee%2F-LiROMuOT_PrD8fbTOt-%2Fec2_8.PNG?alt=media&token=3ad3bd07-8ffc-4c79-bffe-09deb9853081)
