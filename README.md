@@ -8,12 +8,6 @@ description: Why I decided to make this book.
 
 I feel like many books recommended for aspiring data scientists go two ways. The first kind of guide for data scientists is basically a math text book. The second kind is based around pandas, scikit-learn, and mySQL, but users never leave Jupyter notebooks. 
 
-\(Another way these things go is advice too general to help anybody i.e. "start a blog, make your github green, tweet!". I click on these half-assed articles all the time and always leave disappointed. I guarantee this work is bs free.\)
-
-{% embed url="https://towardsdatascience.com/top-13-skills-to-become-a-rockstar-data-scientist-faf2f97e655d" caption="" %}
-
-Above is a classic example of a zero-information article. Reading this puts you no closer to developing data science skills. It only lists things to work on with zero direction of how to develop. My book is the opposite. Important how-to's only.
-
 This book will help you put all your hard work online and show it off to potential employers. 
 
 I am including some of my most useful code from across my projects. 

@@ -37,7 +37,3 @@ nts/pipenv-pcovd6ay-requirement.txt (line 1))']
 
 If this is the case you can run install the latest version provided. So from the error above, the command would be `pipenv install annoy==1.15.2`.
 
-## Dev packages
-
-While developing stuff you might use some packages only in development and use different packages in your app. If you plan on using Jupyter notebooks for data analysis and not in your app it is probably best to install it as a dev package. Later, when you run `pipenv install` in your app environment dev packages will not be included. If you are switching between two analysis environments you can use `pipenv install --dev` to install all the packages including development packages.
-

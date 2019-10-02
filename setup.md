@@ -16,10 +16,10 @@ Access to bash scripts is an upgrade from programming solely on windows. And mos
 
 ## Using a code formatter
 
-I recently found the [black](https://github.com/python/black) code formatter for python and its [counterpart for Jupyter notebooks](https://github.com/csurfer/blackcellmagic). These have been a godsend.   
+I recently found the [black](https://github.com/python/black) code formatter for python and blackcellmagic, its [counterpart for Jupyter notebooks](https://github.com/csurfer/blackcellmagic). These have been a godsend.   
 Code formatters as a topic are pretty controversial. "What is readable to some, is not readable to all," as well as many more unmoving concerns. In my opinion, anything that can make code consistent and good looking with zero actual cost should be every time.  
 I can only devote so much time to cleaning and documenting my code before I get distracted. Not only has using black saved me time, but having good-looking is my biggest motivator for writing good documentation. Code formatting energizes my work flow. 
 
 The commands are simple. `pip install black` & `black file_to_blacken.py`.  
-And for notebooks: `pip install blackcelllmagic` . Put the command `%load_ext blackcellmagic` somewhere, I prefere the top of the notebook. To actually format an individual cell, add `%%black` at the top of that cell and shift+enter to run it. It will blacken the code, but the cell will not run. 
+And for notebooks: `pip install blackcelllmagic` . Put the command `%load_ext blackcellmagic` somewhere, I prefer the top of the notebook. To actually format an individual cell, add `%%black` at the top of that cell and shift+enter to run it. It will blacken the code, but the cell will not run. 
 
