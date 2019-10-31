@@ -20,26 +20,26 @@ Some guides mentioned doing papermill with a conda environment, but I could not 
 
 Using AWS can be the most frustrating part of using the internet. The documentation is at best unclear, often what you see and what you are supposed to see are two different things, and you usually go around in circles reading documentation links. The instructions have everything you need to get papermill working with aws.
 
-![Step 1: Navigate to the AWS IAM page.](.gitbook/assets/iam1.PNG)
+![Step 1: Navigate to the AWS IAM page.](../.gitbook/assets/iam1.PNG)
 
 This is the first page you see when you go to the Amazaon IAM page. Click on the _Create individual IAM users_.  Then click on _Manage Users._ 
 
-![Step 2: Start adding a new user](.gitbook/assets/iam2.PNG)
+![Step 2: Start adding a new user](../.gitbook/assets/iam2.PNG)
 
 Click on _Add User_. 
 
 client = boto3.client\( 9 "s3", 10 aws\_access\_key\_id=config\("AWS\_ACCESS\_KEY\_ID"\), 11 aws\_secret\_access\_key=config\("AWS\_SECRET\_ACCESS\_KEY"\), 12 \)
 
-![Step 3: Fill out the form to create a new user](.gitbook/assets/iam3.PNG)
+![Step 3: Fill out the form to create a new user](../.gitbook/assets/iam3.PNG)
 
 Find a new name for yourself and give yourself programmatic access. We need to use the AWS CLI \(command line interface\) to take advantage of papermill. 
 
-![Step 4: Give yourself S3 Permissions](.gitbook/assets/iam4.PNG)
+![Step 4: Give yourself S3 Permissions](../.gitbook/assets/iam4.PNG)
 
 Under the _Attach existing policies directly_ tab, enter s3 in the search bar and add _Amazon S3FullAccess_.   
 Click on through the review until you see the _Success_ screen. 
 
-![Step 5: Get Your Credentials](.gitbook/assets/iam5.PNG)
+![Step 5: Get Your Credentials](../.gitbook/assets/iam5.PNG)
 
 At this screen, you have the option to download your Access key ID and Secret access key as .csv file. You can only view these online while this window is open. So make sure to download these keys and save them somewhere you can trust. 
 
@@ -47,7 +47,7 @@ At this screen, you have the option to download your Access key ID and Secret ac
 
 To finally get this stuff working type `aws configure` in your terminal. Enter your Access Key ID and Secret Access Key where appropriate. There are other prompts after those two such as default region. Set those up if you really need to, but since I am in the U.S. I am fine with the defaults.
 
-![](.gitbook/assets/aws-configure.PNG)
+![](../.gitbook/assets/aws-configure.PNG)
 
 #### Now that we have the setup ready, let's get papermill running. 
 

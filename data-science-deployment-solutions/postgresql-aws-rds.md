@@ -20,39 +20,39 @@ RDS: Relational Database  Service
 3. 
 ## Set up PostgreSQL on RDS
 
-![Step 1](.gitbook/assets/rds1.PNG)
+![Step 1](../.gitbook/assets/rds1.PNG)
 
 Make sure to choose PostgreSQL
 
-![Step 2](.gitbook/assets/rds2.PNG)
+![Step 2](../.gitbook/assets/rds2.PNG)
 
 Make sure to use your free tier
 
-![Step 3](.gitbook/assets/rds3.PNG)
+![Step 3](../.gitbook/assets/rds3.PNG)
 
 If your console give you the option to choose "only enable options eligible for RDS Free Usage Tier" use that. If not, the image shows the default settings for free tier.
 
-![Step 4](.gitbook/assets/rds4.PNG)
+![Step 4](../.gitbook/assets/rds4.PNG)
 
 Give your database instance a name, username, and a password. Make sure you have access to these because we will use it later.
 
-![Step 5](.gitbook/assets/rds5.PNG)
+![Step 5](../.gitbook/assets/rds5.PNG)
 
 Default settings.
 
-![Step 6](.gitbook/assets/rds6.PNG)
+![Step 6](../.gitbook/assets/rds6.PNG)
 
 Give your database a name. Everything else is the default. The process in this book does not use IAM DB authentication.
 
-![Step 7](.gitbook/assets/rds7.PNG)
+![Step 7](../.gitbook/assets/rds7.PNG)
 
 Defaults.
 
-![Step 8](.gitbook/assets/rds8.PNG)
+![Step 8](../.gitbook/assets/rds8.PNG)
 
 More Defaults
 
-![Step 9](.gitbook/assets/rds9.PNG)
+![Step 9](../.gitbook/assets/rds9.PNG)
 
 And finally more defaults. Although I did enable deletion protection. Better safe than sorry. You should be able disable this later if you need to delete the table.
 
@@ -80,11 +80,11 @@ If you do not follow this step you will get an error message like this:
 
 click on the "rds-launch-wizard" in the **Security** section on your dashboard.
 
-![Look for the security section on your dashboard](.gitbook/assets/rds10.PNG)
+![Look for the security section on your dashboard](../.gitbook/assets/rds10.PNG)
 
 Look for the "edit inbound rules"
 
-![Click &quot;Edit&quot; at this table](.gitbook/assets/rds11.PNG)
+![Click &quot;Edit&quot; at this table](../.gitbook/assets/rds11.PNG)
 
 This is the window that pops up after clicking on the "Edit button". Click on "Add Rule".   
 **Type** = ****PostgreSql.  
@@ -92,7 +92,7 @@ This is the window that pops up after clicking on the "Edit button". Click on "A
 **Port Range** = 6432   
 **Source:** You can select "My IP" for local work. If you need to connect from an app you can add it after selecting Custom.
 
-![](.gitbook/assets/rds12.PNG)
+![](../.gitbook/assets/rds12.PNG)
 
 ## Tips
 
