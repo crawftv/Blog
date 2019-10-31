@@ -52,7 +52,7 @@ class A:
     ...
 a = A()
 try:
-    #do something
+    a.attribute
 except:
     #do something else
 
