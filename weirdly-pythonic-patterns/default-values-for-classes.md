@@ -39,6 +39,19 @@ b.data == [1]
 
 This now returns `False`.
 
-  
+You could also use a ternary function.
 
+{% code-tabs %}
+{% code-tabs-item title="Ternary Way" %}
+```python
+class A:
+    def __init__(self,data=None):
+       self.data = data if data is not None else []
+a = A()
+a.data.append(1)
+b = A()
+b.data == [1]
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
