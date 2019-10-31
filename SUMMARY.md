@@ -4,6 +4,7 @@
 * [Setup](setup.md)
 * [Starting with Pipenv](starting-with-pipenv.md)
 * [Weirdly Pythonic Patterns](weirdly-pythonic-patterns/README.md)
+  * [Using a class attribute without knowing it's existence.](weirdly-pythonic-patterns/untitled.md)
   * [Default Values for classes](weirdly-pythonic-patterns/default-values-for-classes.md)
 * [Asyncio Web Crawler](asyncio-web-crawler.md)
 * [Packaging, Modules, etc.](packaging-modules-etc./README.md)
