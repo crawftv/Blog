@@ -9,8 +9,7 @@ description: What to do without a Case/Switch feature.
 My evolution to finding this pattern.   
 Lets say you have a class and you want to see if it has an attribute. The first way I thought to do this was:
 
-{% code-tabs %}
-{% code-tabs-item title="Very wrong way" %}
+{% code title="Very wrong way" %}
 ```python
 class A:
     ...
@@ -20,13 +19,11 @@ if 'attribute' is in dir(a):
 else:
     #do something else
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Then I found out about the `hasattr` function.
 
-{% code-tabs %}
-{% code-tabs-item title="less wrong way" %}
+{% code title="less wrong way" %}
 ```python
 class A:
     ...
@@ -36,8 +33,7 @@ if hasattr(a,'attribute'):
 else:
     #do something else
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ## Right Way - "Easier to Ask for Forgiveness instead of Permission"
 
@@ -45,8 +41,7 @@ The Python community generally prefers "EAFP" rather than "LBYL" \(Look Before Y
 
 What this means in practice is to use a try and except block.
 
-{% code-tabs %}
-{% code-tabs-item title="Right Way" %}
+{% code title="Right Way" %}
 ```python
 class A:
     ...
@@ -57,8 +52,7 @@ except:
     #do something else
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 
 

@@ -2,8 +2,7 @@
 
 You can't set a default value for classes in the `__init__` function. For instance:
 
-{% code-tabs %}
-{% code-tabs-item title="Wrong way" %}
+{% code title="Wrong way" %}
 ```python
 class A:
     def __init__(self,data=[]):
@@ -13,15 +12,13 @@ a.data.append(1)
 b = A()
 b.data == [1]
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 The above returns `True`.  
 
 The appropriate pattern is to set the default to `None` and adjust in the `__init__` function.
 
-{% code-tabs %}
-{% code-tabs-item title="Right Way" %}
+{% code title="Right Way" %}
 ```python
 class A:
     def __init__(self,data=None):
@@ -34,15 +31,13 @@ b = A()
 b.data == [1]
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 This now returns `False`.
 
 You could also use a ternary function.
 
-{% code-tabs %}
-{% code-tabs-item title="Ternary Way" %}
+{% code title="Ternary Way" %}
 ```python
 class A:
     def __init__(self,data=None):
@@ -52,6 +47,5 @@ a.data.append(1)
 b = A()
 b.data == [1]
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 

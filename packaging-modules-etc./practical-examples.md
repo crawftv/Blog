@@ -19,7 +19,7 @@ description: An example based off my experience
 
 Until I learn more, my \_\_init\_\_.py files are blank.
 
-### circleci/config.yml
+### .circleci/config.yml
 
 {% embed url="https://gist.github.com/crawftv/bc68315f9577089ce955c08adda05925" %}
 
