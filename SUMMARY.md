@@ -37,4 +37,5 @@
   * [SVD](machine-learning/svd.md)
 * [Approximate Nearest Neighbors](approximate-nearest-neighbors.md)
 * [Anatomy of a Modern Test File](anatomy-of-a-modern-test-file.md)
+* [Debugging](debugging.md)
 
