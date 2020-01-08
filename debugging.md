@@ -16,7 +16,9 @@ Once I was debugging something for hours only to realize my function was recursi
 
 Call the debugger by using `import pdb;pdb.set_trace()`.
 
-Make sure to put this outside a while loop. Or else you will call this debugger recursively.
+### Dealing with debugging loops
+
+#### Option 1: Try except
 
 If you are  in a loop, use the pattern below. Or else you wil call the debugger your fist time through the loop, rather than just when it breaks. You will now be able to observe the state of the program when you program breaks.
 
@@ -27,5 +29,15 @@ except:
     import pdb;pdb.set_trace()
 ```
 
+#### Option 2: Take advantage of continue inside a loop
 
+with the  `continue` debugger command and the `import pdb; pdb.set_trace()` code at the top of  a loop, the debugger will execute all code below and return you to the top of the loop. 
+
+### Are you resetting something in your code?
+
+One error I get when I'm merging two pieces of code is that I was working on something where I created a data structure, isolated a piece of code and recreate the data structure. Then when i merge the code I reset the data inside of the function.
+
+```python
+
+```
 
