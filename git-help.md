@@ -15,3 +15,5 @@ git filter-branch --tree-filter 'rm -rf path/path' HEAD
 git filter-brach --tree-filter 'rm file' HEAD
 ```
 
+> [https://dalibornasevic.com/posts/2-permanently-remove-files-and-folders-from-git-repo](https://dalibornasevic.com/posts/2-permanently-remove-files-and-folders-from-git-repo)
+
