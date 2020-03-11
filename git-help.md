@@ -29,3 +29,12 @@ git filter-brach --tree-filter 'rm file' HEAD
 
 > [https://dalibornasevic.com/posts/2-permanently-remove-files-and-folders-from-git-repo](https://dalibornasevic.com/posts/2-permanently-remove-files-and-folders-from-git-repo)
 
+### Push a bunch of small commits together \(squash\)
+
+```bash
+git rebase -i HEAD~<NUMBER OF COMMITS TO GO BACK>
+git push force #if you have already pushed commits
+```
+
+[https://github.com/todotxt/todo.txt-android/wiki/Squash-All-Commits-Related-to-a-Single-Issue-into-a-Single-Commit](https://github.com/todotxt/todo.txt-android/wiki/Squash-All-Commits-Related-to-a-Single-Issue-into-a-Single-Commit)
+
