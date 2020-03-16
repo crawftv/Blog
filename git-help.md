@@ -36,5 +36,15 @@ git rebase -i HEAD~<NUMBER OF COMMITS TO GO BACK>
 git push force #if you have already pushed commits
 ```
 
-[https://github.com/todotxt/todo.txt-android/wiki/Squash-All-Commits-Related-to-a-Single-Issue-into-a-Single-Commit](https://github.com/todotxt/todo.txt-android/wiki/Squash-All-Commits-Related-to-a-Single-Issue-into-a-Single-Commit)
+> [https://github.com/todotxt/todo.txt-android/wiki/Squash-All-Commits-Related-to-a-Single-Issue-into-a-Single-Commit](https://github.com/todotxt/todo.txt-android/wiki/Squash-All-Commits-Related-to-a-Single-Issue-into-a-Single-Commit)
+
+### Accidentally merged the wrong pull request/commit
+
+```bash
+git reset --merge <COMMIT HASH>
+```
+
+> [https://intellipaat.com/community/21094/undo-merge-git-rollback-a-git-merge](https://intellipaat.com/community/21094/undo-merge-git-rollback-a-git-merge)
+
+
 
