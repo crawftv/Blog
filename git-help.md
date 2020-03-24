@@ -46,5 +46,13 @@ git reset --merge <COMMIT HASH>
 
 > [https://intellipaat.com/community/21094/undo-merge-git-rollback-a-git-merge](https://intellipaat.com/community/21094/undo-merge-git-rollback-a-git-merge)
 
+## Reset a file and lose all progress
+
+```bash
+git checkout -- filename
+```
+
+> [https://www.norbauer.com/rails-consulting/notes/git-revert-reset-a-single-file](https://www.norbauer.com/rails-consulting/notes/git-revert-reset-a-single-file)
+
 
 
