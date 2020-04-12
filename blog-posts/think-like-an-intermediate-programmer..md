@@ -4,6 +4,10 @@ description: Advancing beyond Googling everything.
 
 # Think like an intermediate programmer.
 
+## Purpose
+
+This article was written to show newcomers a process for solving a problem common to many programmers. The meta-problem in all this is that I couldn't really find a StackOverflow answer to my specific problem. And if I did, I was not sure it would be the solution to my problem. This does get a little repetitive, feel free to replace some of the technical details with yada-yada-yada. All in all it took me nearly a whole saturday to figure out the right place to add one line of code.
+
 ## The Setup
 
 I was trying to deploy a GitHub repo to Heroku with continuous integration for a new personal website. The Heroku provides a couple comprehensive & step-by-step guides to get started. I've gone through this process more than a handful of time so I was comfortable with it. After adding the Procfile, requirements.txt, & runtime.txt and pushing to the master branch. Something went wrong.
@@ -100,5 +104,5 @@ To find where I needed to add my code, I searched for the line I need and landed
 
 ```
 
-A very long line with a lot going on. At the same time it was still just a doing a simple thing.  Right above it, I copy-pasted the line, changing `"$BUILD_DIR/requirements.txt"`
+A very long line with a lot going on. At the same time it was still just a doing a simple thing.  Right above it, I copy-pasted the line, changing `"$BUILD_DIR/requirements.txt"` to `falcon falcon_jinja` . I followed the Heroku guide for registering the package, added to my settings and it worked. 
 
