@@ -12,6 +12,7 @@
   * [Simple Example](packaging-modules-etc./simple-example.md)
 * [Pickling](pickling.md)
 * [Deployment Solutions](data-science-deployment-solutions/README.md)
+  * [Editing the Heroku Buildpack](data-science-deployment-solutions/editing-the-heroku-buildpack.md)
   * [Annoy](data-science-deployment-solutions/annoy.md)
   * [Elastic Search AWS](data-science-deployment-solutions/elastic-search-aws.md)
   * [Google Cloud Functions](data-science-deployment-solutions/google-cloud-functions.md)
