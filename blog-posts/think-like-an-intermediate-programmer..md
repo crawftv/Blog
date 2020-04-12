@@ -4,7 +4,7 @@ description: Advancing beyond Googling everything.
 
 # Think like an intermediate programmer.
 
-## The Problem
+## The Setup
 
 I was trying to deploy a GitHub repo to Heroku with continuous integration for a new personal website. The Heroku provides a couple comprehensive & step-by-step guides to get started. I've gone through this process more than a handful of time so I was comfortable with it. After adding the Procfile, requirements.txt, & runtime.txt and pushing to the master branch. Something went wrong.
 
@@ -43,4 +43,62 @@ Sqlite3 successfully installed.
  !     Push rejected, failed to compile Python app.
  !     Push failed
 ```
+
+### The Main Error
+
+```text
+ Collecting falcon-jinja2==0.0.3
+ ...
+ ModuleNotFoundError: No module named 'falcon'
+```
+
+When I installed in my dev, I had the same error but with `jinja2`. The solution was to install `jinja2` first and reinstall `falcon-jinja2`.   
+From this I reasoned that I needed to have `falcon` and `jinja2` installed and built before installing `falcon-jinja2`. 
+
+## The Problem
+
+#### I need to install falcon and jinja2 before installing some things in the requirements.txt
+
+## Solutions
+
+The first thing I did was scour the Heroku documentation. I also made a few unhelpful google searches.
+
+#### Release Phase
+
+Eventually I found [a page on the "Release Phase"](https://devcenter.heroku.com/articles/release-phase). The first line of the pretty much guaranteed a solution to my problem.
+
+> Release phase _**enables you to run certain tasks**_ before a new [release](https://devcenter.heroku.com/articles/releases) of your app is deployed.
+
+Perfect \(The emphasis in the quote above is mine\). I quickly wrote a bash script of a few `pip install` commands, added that script to the Profile, and pushed it,  awaiting success.
+
+```text
+/bin/sh: 1: ./install.sh: Permission denied
+```
+
+Yikes. I quickly realized two things. I did not know what a release phase meant _and_ I did not know how to fix it. Since this quick solution did not work, I decided to find a totally new solution. I glanced over most of the documentation when I saw that first sentence. I should have paid more attention to the examples, which used code for database migrations. The solution I tried was for a totally different problem.
+
+#### The Buildpack
+
+After clicking nearly every Python related thing on Heroku website, I found this crucial sentence in my project's settings tab. 
+
+> Buildpacks are scripts that are run when your app is deployed.
+
+I decided that I was going to make my own Buildpack. Heroku provides a great set of [Documentation on this as well](https://devcenter.heroku.com/articles/buildpack-api).   
+I forked the Python Buildpack repo. The docs pointed me to the `bin/compile` folder. Unfortunately for me, the repo is shell code and I can't do much more than one liners. 
+
+#### Reassessing the Problem
+
+What do I know?
+
+* I know a solution, but I don't know where to put it.
+* I know the program is logging things to a console. 
+
+To find where I needed to add my code, I searched for the line I need and landed at a file called `bin/compile/steps/pip-install` . This looked promising. The file was suspiciously long for something as simple as running a pip install, about 70 lines. But I knew the relevant code was going to look like the standard `pip install ...` So I searched and found this:
+
+```text
+/app/.heroku/python/bin/pip install -r "$BUILD_DIR/requirements.txt" --exists-action=w --src=/app/.heroku/src --disable-pip-version-check --no-cache-dir 2>&1 | tee "$WARNINGS_LOG" | cleanup | indent
+
+```
+
+A very long line with a lot going on. At the same time it was still just a doing a simple thing.  Right above it, I copy-pasted the line, changing `"$BUILD_DIR/requirements.txt"`
 
