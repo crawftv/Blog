@@ -1,2 +1,2 @@
-# Data Science Deployment Solutions
+# Deployment Solutions
 

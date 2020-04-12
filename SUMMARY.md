@@ -1,9 +1,13 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Setup](setup.md)
+
+## Blog Posts
+
+* [Parameter & HyperParameter Tuning with Bayesian Optimization](blog-posts/hyper-parameter-blog-post.md)
+* [JavaScript, Jinja & FlaskBlog Post](blog-posts/flask-blog-post.md)
+* [Think like an intermediate programmer.](blog-posts/think-like-an-intermediate-programmer..md)
 * [Git Help](git-help.md)
-* [Starting with Pipenv](starting-with-pipenv.md)
 * [Weirdly Pythonic Patterns](weirdly-pythonic-patterns/README.md)
   * [Using a class attribute without knowing it's existence.](weirdly-pythonic-patterns/untitled.md)
   * [Default Values for classes](weirdly-pythonic-patterns/default-values-for-classes.md)
@@ -30,15 +34,16 @@
 * [Anatomy of a Modern Test File](anatomy-of-a-modern-test-file.md)
 * [Debugging](debugging.md)
 * [Assorted Tips](assorted-tips.md)
-* [Think like an intermediate programmer.](think-like-an-intermediate-programmer..md)
-* [JavaScript, Jinja & FlaskBlog Post](flask-blog-post.md)
 * [Asyncio Web Crawler](asyncio-web-crawler.md)
-* [Parameter & HyperParameter Tuning with Bayesian Optimization](hyper-parameter-blog-post.md)
 * [Potential Topics](potential-topics.md)
-* [Untitled](untitled.md)
 * [Machine Learning](machine-learning/README.md)
   * [Rethinking Backprop](machine-learning/rethinking-backprop.md)
   * [SVD](machine-learning/svd.md)
 * [Approximate Nearest Neighbors](approximate-nearest-neighbors.md)
 * [Vaex](vaex.md)
+
+## Deprecated
+
+* [Starting with Pipenv](deprecated/starting-with-pipenv.md)
+* [WSL Setup](deprecated/setup.md)
 
