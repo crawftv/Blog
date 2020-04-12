@@ -11,7 +11,7 @@
   * [Practical Examples](packaging-modules-etc./practical-examples.md)
   * [Simple Example](packaging-modules-etc./simple-example.md)
 * [Pickling](pickling.md)
-* [Data Science Deployment Solutions](data-science-deployment-solutions/README.md)
+* [Deployment Solutions](data-science-deployment-solutions/README.md)
   * [Annoy](data-science-deployment-solutions/annoy.md)
   * [Elastic Search AWS](data-science-deployment-solutions/elastic-search-aws.md)
   * [Google Cloud Functions](data-science-deployment-solutions/google-cloud-functions.md)
