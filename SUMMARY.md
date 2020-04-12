@@ -49,5 +49,5 @@
 * [Pickling](assorted-knowledge/pickling.md)
 * [Git Help](assorted-knowledge/git-help.md)
 * [Debugging](assorted-knowledge/debugging.md)
-* [Untitled](assorted-knowledge/untitled.md)
+* [Clean up a virtualenv](assorted-knowledge/untitled.md)
 
