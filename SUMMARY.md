@@ -30,6 +30,7 @@
 * [Anatomy of a Modern Test File](anatomy-of-a-modern-test-file.md)
 * [Debugging](debugging.md)
 * [Assorted Tips](assorted-tips.md)
+* [Think like an intermediate programmer.](think-like-an-intermediate-programmer..md)
 * [JavaScript, Jinja & FlaskBlog Post](flask-blog-post.md)
 * [Asyncio Web Crawler](asyncio-web-crawler.md)
 * [Parameter & HyperParameter Tuning with Bayesian Optimization](hyper-parameter-blog-post.md)
