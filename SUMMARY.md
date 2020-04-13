@@ -51,3 +51,7 @@
 * [Debugging](assorted-knowledge/debugging.md)
 * [Clean up a virtualenv](assorted-knowledge/untitled.md)
 
+## Math
+
+* [Untitled](math/untitled.md)
+
