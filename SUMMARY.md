@@ -24,16 +24,13 @@
     * [ETL](data-science-deployment-solutions/prefect.io/etl.md)
   * [PostgreSQL AWS RDS](data-science-deployment-solutions/postgresql-aws-rds.md)
 * [Potential Topics](potential-topics.md)
-* [Machine Learning](machine-learning/README.md)
-  * [Rethinking Backprop](machine-learning/rethinking-backprop.md)
-  * [SVD](machine-learning/svd.md)
-* [Approximate Nearest Neighbors](approximate-nearest-neighbors.md)
 
-## Deprecated
+## Math
 
-* [Vaex](deprecated/vaex.md)
-* [Starting with Pipenv](deprecated/starting-with-pipenv.md)
-* [WSL Setup](deprecated/setup.md)
+* [Approximate Nearest Neighbors](math/approximate-nearest-neighbors.md)
+* [Machine Learning](math/machine-learning/README.md)
+  * [Rethinking Backprop](math/machine-learning/rethinking-backprop.md)
+  * [SVD](math/machine-learning/svd.md)
 
 ## Assorted Knowledge
 
@@ -51,7 +48,9 @@
 * [Debugging](assorted-knowledge/debugging.md)
 * [Clean up a virtualenv](assorted-knowledge/untitled.md)
 
-## Math
+## Deprecated
 
-* [Untitled](math/untitled.md)
+* [Vaex](deprecated/vaex.md)
+* [Starting with Pipenv](deprecated/starting-with-pipenv.md)
+* [WSL Setup](deprecated/setup.md)
 
