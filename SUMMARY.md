@@ -34,19 +34,19 @@
 
 ## Assorted Knowledge
 
-* [Asyncio Web Crawler](assorted-knowledge/asyncio-web-crawler.md)
+* [Git Help](assorted-knowledge/git-help.md)
 * [Assorted Tips](assorted-knowledge/assorted-tips.md)
 * [Web Dev Troubleshooting  Checklist](assorted-knowledge/web-dev-troubleshooting-checklist.md)
 * [Packaging, Modules, etc.](assorted-knowledge/packaging-modules-etc./README.md)
   * [Practical Examples](assorted-knowledge/packaging-modules-etc./practical-examples.md)
   * [Simple Example](assorted-knowledge/packaging-modules-etc./simple-example.md)
 * [Weirdly Pythonic Patterns](assorted-knowledge/weirdly-pythonic-patterns/README.md)
-  * [Using a class attribute without knowing it's existence.](assorted-knowledge/weirdly-pythonic-patterns/untitled.md)
   * [Default Values for classes](assorted-knowledge/weirdly-pythonic-patterns/default-values-for-classes.md)
+  * [Using a class attribute without knowing it's existence.](assorted-knowledge/weirdly-pythonic-patterns/untitled.md)
 * [Pickling](assorted-knowledge/pickling.md)
-* [Git Help](assorted-knowledge/git-help.md)
 * [Debugging](assorted-knowledge/debugging.md)
 * [Clean up a virtualenv](assorted-knowledge/untitled.md)
+* [Asyncio Web Crawler](assorted-knowledge/asyncio-web-crawler.md)
 
 ## Deprecated
 
