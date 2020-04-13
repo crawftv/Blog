@@ -4,6 +4,7 @@
 
 ## Blog Posts
 
+* [Anatomy of a Modern Test File](blog-posts/anatomy-of-a-modern-test-file.md)
 * [Parameter & HyperParameter Tuning with Bayesian Optimization](blog-posts/hyper-parameter-blog-post.md)
 * [JavaScript, Jinja & FlaskBlog Post](blog-posts/flask-blog-post.md)
 * [Think like an intermediate programmer.](blog-posts/think-like-an-intermediate-programmer..md)
@@ -22,22 +23,21 @@
     * [Scheduler](data-science-deployment-solutions/prefect.io/scheduler.md)
     * [ETL](data-science-deployment-solutions/prefect.io/etl.md)
   * [PostgreSQL AWS RDS](data-science-deployment-solutions/postgresql-aws-rds.md)
-* [Anatomy of a Modern Test File](anatomy-of-a-modern-test-file.md)
-* [Asyncio Web Crawler](asyncio-web-crawler.md)
 * [Potential Topics](potential-topics.md)
 * [Machine Learning](machine-learning/README.md)
   * [Rethinking Backprop](machine-learning/rethinking-backprop.md)
   * [SVD](machine-learning/svd.md)
 * [Approximate Nearest Neighbors](approximate-nearest-neighbors.md)
-* [Vaex](vaex.md)
 
 ## Deprecated
 
+* [Vaex](deprecated/vaex.md)
 * [Starting with Pipenv](deprecated/starting-with-pipenv.md)
 * [WSL Setup](deprecated/setup.md)
 
 ## Assorted Knowledge
 
+* [Asyncio Web Crawler](assorted-knowledge/asyncio-web-crawler.md)
 * [Assorted Tips](assorted-knowledge/assorted-tips.md)
 * [Web Dev Troubleshooting  Checklist](assorted-knowledge/web-dev-troubleshooting-checklist.md)
 * [Packaging, Modules, etc.](assorted-knowledge/packaging-modules-etc./README.md)
