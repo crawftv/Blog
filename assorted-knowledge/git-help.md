@@ -38,6 +38,8 @@ git push force #if you have already pushed commits
 
 > [https://github.com/todotxt/todo.txt-android/wiki/Squash-All-Commits-Related-to-a-Single-Issue-into-a-Single-Commit](https://github.com/todotxt/todo.txt-android/wiki/Squash-All-Commits-Related-to-a-Single-Issue-into-a-Single-Commit)
 
+If you are working with github and using non-"Master" branches for development, you can squash the commits before merging through the website gui., but i haven't tried it.
+
 ### Accidentally merged the wrong pull request/commit
 
 ```bash
