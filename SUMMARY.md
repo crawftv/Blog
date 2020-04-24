@@ -4,6 +4,7 @@
 
 ## Blog Posts
 
+* [Pip-tools for Cross-OS development.](blog-posts/pip-tools-for-cross-os-development..md)
 * [Anatomy of a Modern Test File](blog-posts/anatomy-of-a-modern-test-file.md)
 * [Parameter & HyperParameter Tuning with Bayesian Optimization](blog-posts/hyper-parameter-blog-post.md)
 * [JavaScript, Jinja & FlaskBlog Post](blog-posts/flask-blog-post.md)
