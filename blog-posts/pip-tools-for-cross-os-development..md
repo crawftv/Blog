@@ -39,6 +39,8 @@ pandas
 scikit-learn
 ```
 
+This is the only thing you need to include in your versioning.
+
 ### 2 . pip-compile 
 
 ```text
@@ -46,6 +48,10 @@ pip-compile requirement.in --output-file=requirements.txt
 ```
 
 This step gets all the top level dependencies, anything you would manually install for your project.
+
+_In the past, you might have installed all your dependencies from the command line and ran_ `pip freeze > requirements.txt` . _But that time is gone._ 
+
+You can compile this on any environment you need for os-specific installations.
 
 ### 3. pip install
 
