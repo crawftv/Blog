@@ -8,8 +8,6 @@ I am using Prefect.io for a project. Prefect is great but the package requires d
 
 pip-tools is a package to make using python a little less stress inducing.
 
-
-
 ## Components
 
 ### Pip-tools
