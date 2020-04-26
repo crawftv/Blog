@@ -9,6 +9,12 @@ I am using Prefect.io for a project. Prefect is great but the package requires d
 The solution is to use pip-tools and a **requirements.in** instead of a **requirements.txt.**   
 With pip-tools you can generate a unique **requirements.txt** for each environment.
 
+## Quick Mixed Metaphor
+
+The **requirements.in** is like placing an order at a restaurant. You know what you want, but not everything else that is needed to make it.
+
+
+
 ## Components
 
 ### Pip-tools
