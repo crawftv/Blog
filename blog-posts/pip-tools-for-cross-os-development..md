@@ -4,17 +4,18 @@
 
 I am using Prefect.io for a project. Prefect is great but the package requires docker, which requires special packages when running on windows. When I push this project to the Continuous Integration environment, the installation breaks breaks because the Linux environments can't use the windows-specific packages. 
 
-## Pip-tools
+## The Solution
 
-[https://github.com/jazzband/pip-tools](https://github.com/jazzband/pip-tools)
-
-pip-tools is a package to make using python a little less stress inducing.
+The solution is to use pip-tools and a **requirements.in** instead of a **requirements.txt.**   
+With pip-tools you can generate a unique **requirements.txt** for each environment.
 
 ## Components
 
 ### Pip-tools
 
 The pypi package you will need to make this all work. 
+
+[https://github.com/jazzband/pip-tools](https://github.com/jazzband/pip-tools)
 
 ### Requirements.in
 
