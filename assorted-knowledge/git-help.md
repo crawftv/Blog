@@ -56,5 +56,7 @@ git checkout -- filename
 
 > [https://www.norbauer.com/rails-consulting/notes/git-revert-reset-a-single-file](https://www.norbauer.com/rails-consulting/notes/git-revert-reset-a-single-file)
 
+## Pushed big changes to a repo. Now i want to reset my local repo to match master
 
+[https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files](https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files)
 
