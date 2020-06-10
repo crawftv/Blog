@@ -7,7 +7,7 @@
 * [Pip-tools for Cross-OS development.](blog-posts/pip-tools-for-cross-os-development..md)
 * [Anatomy of a Modern Test File](blog-posts/anatomy-of-a-modern-test-file.md)
 * [Parameter & HyperParameter Tuning with Bayesian Optimization](blog-posts/hyper-parameter-blog-post.md)
-* [JavaScript, Jinja & FlaskBlog Post](blog-posts/flask-blog-post.md)
+* [JavaScript, Jinja & Flask](blog-posts/flask-blog-post.md)
 * [Think like an intermediate programmer.](blog-posts/think-like-an-intermediate-programmer..md)
 * [Deployment Solutions](data-science-deployment-solutions/README.md)
   * [Editing the Heroku Buildpack](data-science-deployment-solutions/editing-the-heroku-buildpack.md)
@@ -36,6 +36,7 @@
 ## Assorted Knowledge
 
 * [Git Help](assorted-knowledge/git-help.md)
+* [Mypy tips](assorted-knowledge/mypy-tips.md)
 * [Assorted Tips](assorted-knowledge/assorted-tips.md)
 * [Web Dev Troubleshooting  Checklist](assorted-knowledge/web-dev-troubleshooting-checklist.md)
 * [Packaging, Modules, etc.](assorted-knowledge/packaging-modules-etc./README.md)

@@ -2,7 +2,7 @@
 description: A guide to bringing JavaScript’s Power to your Flask app.
 ---
 
-# JavaScript, Jinja & FlaskBlog Post
+# JavaScript, Jinja & Flask
 
 This article is guide for getting data from your python program to JavaScript inside of a Jinja HTML template . The solution is relatively simple, but until now there was not a good article explaining how to do it.
 
