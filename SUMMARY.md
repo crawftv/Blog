@@ -36,6 +36,7 @@
 ## Assorted Knowledge
 
 * [Git Help](assorted-knowledge/git-help.md)
+* [Assorted resources](assorted-knowledge/assorted-resources.md)
 * [Mypy tips](assorted-knowledge/mypy-tips.md)
 * [Assorted Tips](assorted-knowledge/assorted-tips.md)
 * [Web Dev Troubleshooting  Checklist](assorted-knowledge/web-dev-troubleshooting-checklist.md)
