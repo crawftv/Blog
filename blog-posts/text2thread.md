@@ -76,7 +76,5 @@ def replace_words(word_list):
 
 ## Next Steps
 
-I think I need to fix the document tree construction.
-
 I want to break large paragraphs into smaller chunks and make all the docs in a similar size.
 
