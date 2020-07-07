@@ -31,8 +31,13 @@ for index, paragraph in enumerate(cleaned_train_corpus[1:-1],start=1):
     else:
         search_depth = paragraph.depth
         while search_depth > 0 :
-            sim_1 = model.docvecs.similarity(paragraph.tags[0], paragraph.prev.tags[0])
-            sim_2 = model.docvecs.similarity(paragraph.tags[0], paragraph.prev.prev.tags[0])
+            p1 = paragraph.prev
+            p2 = p1.prev
+            while p2.depth -1 >= p1.depth:
+                p2 = p2.prev
+            sim_1 = model.docvecs.similarity(paragraph.tags[0], p1.tags[0])
+            sim_2 =  model.docvecs.similarity(paragraph.tags[0], p2.tags[0])
+            
             if sim_2 > sim_1:
                 search_depth-=1
                 
