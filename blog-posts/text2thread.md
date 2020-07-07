@@ -22,7 +22,7 @@ I used a tree-like structure with each paragraph as a node. If the node was more
 
 I removed text between brackets, which I took to be footnotes. I replaced all words only mentioned once with a special signifier. I converted everything to lower case and added signifiers denoting uppercases.
 
-```text
+```python
 def replace_words(word_list):
     new_list = ["xxxbos"]
     for i in word_list:
