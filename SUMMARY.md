@@ -9,6 +9,10 @@
 * [Parameter & HyperParameter Tuning with Bayesian Optimization](blog-posts/hyper-parameter-blog-post.md)
 * [JavaScript, Jinja & Flask](blog-posts/flask-blog-post.md)
 * [Think like an intermediate programmer.](blog-posts/think-like-an-intermediate-programmer..md)
+* [Text2Thread](blog-posts/text2thread.md)
+
+---
+
 * [Deployment Solutions](data-science-deployment-solutions/README.md)
   * [Editing the Heroku Buildpack](data-science-deployment-solutions/editing-the-heroku-buildpack.md)
   * [Annoy](data-science-deployment-solutions/annoy.md)
