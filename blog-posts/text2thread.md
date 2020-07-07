@@ -4,13 +4,15 @@ description: Machine Learning to Make Non-Fiction more readable
 
 # Text2Thread
 
+## View the Working example here.
+
+[https://text2thread.herokuapp.com/](https://text2thread.herokuapp.com/)
+
 ## The Problem
 
 I can read forum threads for hours \(HackerNews, reddit, etc.\). But I want to spend that time reading real books.
 
 ## The Solution
-
-[https://text2thread.herokuapp.com/](https://text2thread.herokuapp.com/)
 
 Make Long-form text more like a thread. Give paragraphs big indentation to indicate how it relates to the text that has come before it.
 
