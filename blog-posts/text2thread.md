@@ -10,6 +10,8 @@ I can read forum threads for hours \(HackerNews, reddit, etc.\). But I want to s
 
 ## The Solution
 
+[https://text2thread.herokuapp.com/](https://text2thread.herokuapp.com/)
+
 Make Long-form text more like a thread. Give paragraphs big indentation to indicate how it relates to the text that has come before it.
 
 I created an embedding for each paragraph using the [doc2vec model from Gensim](https://radimrehurek.com/gensim/auto_examples/howtos/run_doc2vec_imdb.html#sphx-glr-auto-examples-howtos-run-doc2vec-imdb-py). 
