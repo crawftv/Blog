@@ -39,6 +39,7 @@
 
 ## Assorted Knowledge
 
+* [Set up windows terminal & Powershell with Powerline](assorted-knowledge/set-up-windows-terminal-and-powershell-with-powerline.md)
 * [Git Help](assorted-knowledge/git-help.md)
 * [Assorted resources](assorted-knowledge/assorted-resources.md)
 * [Mypy tips](assorted-knowledge/mypy-tips.md)
