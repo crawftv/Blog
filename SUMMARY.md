@@ -14,6 +14,7 @@
 ## Advanced Python in the Real World
 
 * [Topics](advanced-python-in-the-real-world/topics.md)
+* [Abstract Classes](advanced-python-in-the-real-world/abstract-classes.md)
 
 ---
 
