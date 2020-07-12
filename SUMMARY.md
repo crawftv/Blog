@@ -62,3 +62,7 @@
 * [Starting with Pipenv](deprecated/starting-with-pipenv.md)
 * [WSL Setup](deprecated/setup.md)
 
+## Advanced Python in the Real World
+
+* [Topics](advanced-python-in-the-real-world/topics.md)
+
