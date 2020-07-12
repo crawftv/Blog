@@ -11,6 +11,10 @@
 * [Think like an intermediate programmer.](blog-posts/think-like-an-intermediate-programmer..md)
 * [Text2Thread](blog-posts/text2thread.md)
 
+## Advanced Python in the Real World
+
+* [Topics](advanced-python-in-the-real-world/topics.md)
+
 ---
 
 * [Deployment Solutions](data-science-deployment-solutions/README.md)
@@ -61,8 +65,4 @@
 * [Vaex](deprecated/vaex.md)
 * [Starting with Pipenv](deprecated/starting-with-pipenv.md)
 * [WSL Setup](deprecated/setup.md)
-
-## Advanced Python in the Real World
-
-* [Topics](advanced-python-in-the-real-world/topics.md)
 
