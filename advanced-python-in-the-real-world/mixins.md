@@ -20,5 +20,26 @@ Classifications make a prediction for a label for each instance of a data. A com
 
 We need to make a lot of models so we should set up some sort of inheritance ensure consistency. 
 
+Both classifiers and regressor will need fit, predict
 
+{% embed url="https://github.com/scikit-learn/scikit-learn/blob/fd237278e895b42abe8d8d09105cbb82dc2cbba7/sklearn/dummy.py\#L23" %}
+
+```python
+class DummyClassifier(MultiOutputMixin, ClassifierMixin, BaseEstimator):
+    def __init__(self, *, strategy="warn", random_state=None,
+                 constant=None):
+    def fit(self, X, y, sample_weight=None):
+    def predict(self, X):
+    def predict_proba(self, X):
+    def predict_log_proba(self, X):
+    def _more_tags(self):
+    def score(self, X, y, sample_weight=None):
+    
+class DummyRegressor(MultiOutputMixin, RegressorMixin, BaseEstimator):
+    def __init__(self, *, strategy="mean", constant=None, quantile=None):
+    def fit(self, X, y, sample_weight=None):
+    def predict(self, X, return_std=False):
+    def _more_tags(self):
+    def score(self, X, y, sample_weight=None):
+```
 
