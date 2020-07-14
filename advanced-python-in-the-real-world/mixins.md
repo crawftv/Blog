@@ -11,7 +11,7 @@ description: Keeping multiple inheritance simple
 >
 > [https://stackoverflow.com/a/547714/9132913](https://stackoverflow.com/a/547714/9132913)
 
-## Problem
+### Problem
 
 We are writing a machine learning library for creating models. There are two types of problems: regressions and classifications. 
 
@@ -58,6 +58,8 @@ class BaseEstimator:
     def _get_param_names(cls):
     def get_params(self, deep=True):
     def set_params(self, **params):
+    def _more_tags(self):
+        return _DEFAULT_TAGS
     def __repr__(self, N_CHAR_MAX=700):
     # The BaseEstimator contains a lot of methods
     # They are all internal methods and none are
@@ -84,4 +86,10 @@ class RegressorMixin:
     def _more_tags(self):
         return {'requires_y': True}
 ```
+
+### Summary of the Code and What We Can Learn
+
+The two dummy classes inherit from 3 classes but expose only 1 inherited function, `score`. Each of the 3 super classes have a `_more_tags` method. 
+
+
 
