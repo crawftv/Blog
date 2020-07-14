@@ -95,7 +95,7 @@ The two dummy classes inherit from 3 classes but expose only 1 inherited functio
 
 Mixins do not need to be classes in their own right. `MultiOutputMixin` has one method and `ClassifierMixin` and `RegressorMixin` have two. 
 
-#### Looking at What the DummClassifier inherited from each SuperClass
+#### Looking at What the DummyClassifier inherited from each SuperClass
 
 | index | \_estimator\_type | classifier |
 | :--- | :--- | :--- |
