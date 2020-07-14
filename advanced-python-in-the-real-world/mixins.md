@@ -35,6 +35,7 @@ class DummyClassifier(MultiOutputMixin, ClassifierMixin, BaseEstimator):
     def predict_log_proba(self, X):
     def _more_tags(self):
     def score(self, X, y, sample_weight=None):
+        return super().score(X, y, sample_weight)
     
 class DummyRegressor(MultiOutputMixin, RegressorMixin, BaseEstimator):
     def __init__(self, *, strategy="mean", constant=None, quantile=None):
@@ -42,6 +43,7 @@ class DummyRegressor(MultiOutputMixin, RegressorMixin, BaseEstimator):
     def predict(self, X, return_std=False):
     def _more_tags(self):
     def score(self, X, y, sample_weight=None):
+        return super().score(X, y, sample_weight)
 ```
 
 We see that both classes inherit from 3 other classes and share 2: MultiOutputMixin & BaseEstimator. 
@@ -91,5 +93,5 @@ class RegressorMixin:
 
 The two dummy classes inherit from 3 classes but expose only 1 inherited function, `score`. Each of the 3 super classes have a `_more_tags` method. 
 
-
+Mixins do not need to be classes in their own right. `MultiOutputMixin` has one method and `ClassifierMixin` and `RegressorMixin` have two. 
 
