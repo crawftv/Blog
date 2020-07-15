@@ -169,3 +169,8 @@ If we updated the tags and iterated through the list without reversing it, we ov
 You could try adding more mixins or adding attributes. But this would make the code more complex. More mixins would increase the number of little problems inheritance causes \(i.e. order\).   
 Adding a separate attribute would make the code more verbose as well. 
 
+## Conclusion
+
+* Mixins are a nice addition to your Object-Oriented repertoire. They make it easy add one or two methods to your class.
+* You can simplify inheritance with a little hack to limit code and inheritance 
+
