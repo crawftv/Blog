@@ -126,6 +126,8 @@ Mixins do not need to be classes in their own right. `MultiOutputMixin` has one 
 
 Interestingly, we don't see anything that is inherited from the Mixins. We  would expect the `score` method to be inherited, but we also know that the DummyClassifier uses the `super.score` method to create it for the class explicitly and not silently inherit. 
 
+We also see that nothing is inherited from the MultiOutput Mixin.
+
 Order of the SuperClasses is important. If the Mixins did not come before the BaseEstimator, the tag overwriting function would not work properly and tags would be missing. 
 
 {% hint style="info" %}
