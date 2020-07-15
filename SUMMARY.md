@@ -65,6 +65,7 @@
 ## Deprecated
 
 * [Vaex](deprecated/vaex.md)
+* [Deprecated Introduction](deprecated/deprecated-introduction.md)
 * [Starting with Pipenv](deprecated/starting-with-pipenv.md)
 * [WSL Setup](deprecated/setup.md)
 
