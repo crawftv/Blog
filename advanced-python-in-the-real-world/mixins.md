@@ -34,6 +34,13 @@ class DummyClassifier(MultiOutputMixin, ClassifierMixin, BaseEstimator):
     def predict_proba(self, X):
     def predict_log_proba(self, X):
     def _more_tags(self):
+         return {
+            'poor_score': True, 'no_validation': True,
+            '_xfail_checks': {
+                'check_methods_subset_invariance':
+                'fails for the predict method'
+            }
+        }
     def score(self, X, y, sample_weight=None):
         return super().score(X, y, sample_weight)
     
@@ -110,4 +117,6 @@ Mixins do not need to be classes in their own right. `MultiOutputMixin` has one 
 | 9 | `predict_proba` | DummyClassifier.predict\_proba |
 | 10 | `score` | DummyClassifier.score |
 | 11 | `set_params` | BaseEstimator.set\_params |
+
+Interestingly, we don't see anything that is inherited from the Mixins. We  would expect the `score` method to be inherited, but we also know that the DummyClassifier uses the `super.score` method to create it for the class explicitly and not silently inherit. 
 
