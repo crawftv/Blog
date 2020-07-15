@@ -4,6 +4,10 @@ description: Keeping multiple inheritance simple
 
 # Mixins
 
+{% hint style="info" %}
+A link a notebook exploring some of the code featured in this post here. [https://colab.research.google.com/drive/1x-JVFigmxWXMqy9cEE8kXSIPYPOIR5wa?usp=sharing](https://colab.research.google.com/drive/1x-JVFigmxWXMqy9cEE8kXSIPYPOIR5wa?usp=sharing)
+{% endhint %}
+
 > A mixin is a special kind of multiple inheritance. There are two main situations where mixins are used:
 >
 > 1. You want to provide a lot of optional features for a class.
@@ -12,6 +16,8 @@ description: Keeping multiple inheritance simple
 > [https://stackoverflow.com/a/547714/9132913](https://stackoverflow.com/a/547714/9132913)
 
 ## Problem
+
+
 
 We are writing a machine learning library for creating models. There are two types of problems: regressions and classifications. 
 
