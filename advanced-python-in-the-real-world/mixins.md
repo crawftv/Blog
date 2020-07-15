@@ -160,6 +160,9 @@ def _get_tags(self):
 
 What the code above does is go through each SuperClass that was passed. If the class has a `_more_tags` attribute the function adds it to the classes tags. The most important part is the `reversed(inspect.getmro(self.class))` . MRO means "Method Resolution Order". Priority is given left to right when making a class in Python. `inspect.getmro` returns a tuple `(sklearn.dummy.DummyClassifier, sklearn.base.MultiOutputMixin, sklearn.base.ClassifierMixin, sklearn.base.BaseEstimator, object)`
 
-If we updated the tags and iterated through the list without reversing it, we overwrite the tags updated by the Mixins with the BaseEstimator values. Clearly the opposite of what we want   
+If we updated the tags and iterated through the list without reversing it, we overwrite the tags updated by the Mixins with the BaseEstimator values. Clearly the opposite of what we want.
 
+#### How would you solve this problem without the hack above.
+
+####  
 
