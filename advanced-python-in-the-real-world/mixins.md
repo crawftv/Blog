@@ -120,3 +120,9 @@ Mixins do not need to be classes in their own right. `MultiOutputMixin` has one 
 
 Interestingly, we don't see anything that is inherited from the Mixins. We  would expect the `score` method to be inherited, but we also know that the DummyClassifier uses the `super.score` method to create it for the class explicitly and not silently inherit. 
 
+Order of the SuperClasses is important. If the Mixins did not come before the BaseEstimator, the tag overwriting function would not work properly and tags would be missing. 
+
+{% hint style="info" %}
+Professional software engineers are capable of mixing the order of these up to. At least one  SuperClass order bug was discovered in 2019\([https://github.com/scikit-learn/scikit-learn/pull/14884](https://github.com/scikit-learn/scikit-learn/pull/14884)\). Fixing these errors was still a work in progress in the middle of 2020\([https://github.com/scikit-learn/scikit-learn/pull/17847](https://github.com/scikit-learn/scikit-learn/pull/17847)\).
+{% endhint %}
+
