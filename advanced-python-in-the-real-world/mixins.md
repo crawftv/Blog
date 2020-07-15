@@ -25,6 +25,8 @@ Both classifiers and regressor will need fit, predict, "\_more\_tags", and  scor
 
 {% embed url="https://github.com/scikit-learn/scikit-learn/blob/fd237278e895b42abe8d8d09105cbb82dc2cbba7/sklearn/dummy.py\#L23" %}
 
+### The Solution: Mixins
+
 ```python
 class DummyClassifier(MultiOutputMixin, ClassifierMixin, BaseEstimator):
     def __init__(self, *, strategy="warn", random_state=None,
@@ -162,7 +164,8 @@ What the code above does is go through each SuperClass that was passed. If the c
 
 If we updated the tags and iterated through the list without reversing it, we overwrite the tags updated by the Mixins with the BaseEstimator values. Clearly the opposite of what we want.
 
-#### How would you solve this problem without the hack above.
+#### How would you solve this problem without the hack above?
 
-####  
+You could try adding more mixins or adding attributes. But this would make the code more complex. More mixins would increase the number of little problems inheritance causes \(i.e. order\).   
+Adding a separate attribute would make the code more verbose as well. 
 
