@@ -11,7 +11,7 @@ description: Keeping multiple inheritance simple
 >
 > [https://stackoverflow.com/a/547714/9132913](https://stackoverflow.com/a/547714/9132913)
 
-### Problem
+## Problem
 
 We are writing a machine learning library for creating models. There are two types of problems: regressions and classifications. 
 
@@ -25,7 +25,7 @@ Both classifiers and regressor will need fit, predict, "\_more\_tags", and  scor
 
 {% embed url="https://github.com/scikit-learn/scikit-learn/blob/fd237278e895b42abe8d8d09105cbb82dc2cbba7/sklearn/dummy.py\#L23" %}
 
-### The Solution: Mixins
+## The Solution: Mixins
 
 ```python
 class DummyClassifier(MultiOutputMixin, ClassifierMixin, BaseEstimator):
@@ -102,7 +102,7 @@ The two dummy classes inherit from 3 classes but expose only 1 inherited functio
 
 Mixins do not need to be classes in their own right. `MultiOutputMixin` has one method and `ClassifierMixin` and `RegressorMixin` have two. 
 
-#### Looking at What the DummyClassifier inherited from each SuperClass
+### Looking at What the DummyClassifier inherited from each SuperClass
 
 | index | \_estimator\_type | classifier |
 | :--- | :--- | :--- |
@@ -142,7 +142,7 @@ different_items
  'requires_y': True}
 ```
 
-### MRO and Inheriting the Same Thing From Different Mixins.
+## MRO and Inheriting the Same Thing From Different Mixins.
 
 The tags are inherited from the `_more_tags` method and all the mixins have them. So how do all the tags make it into the class? With a little hack. From [https://github.com/scikit-learn/scikit-learn/blob/94a9f9a0b04703ae98d61a7e9a98a4dcaac548e8/sklearn/base.py\#L339](https://github.com/scikit-learn/scikit-learn/blob/94a9f9a0b04703ae98d61a7e9a98a4dcaac548e8/sklearn/base.py#L339)
 
@@ -164,7 +164,7 @@ What the code above does is go through each SuperClass that was passed. If the c
 
 If we updated the tags and iterated through the list without reversing it, we overwrite the tags updated by the Mixins with the BaseEstimator values. Clearly the opposite of what we want.
 
-#### How would you solve this problem without the hack above?
+### How would you solve this problem without the hack above?
 
 You could try adding more mixins or adding attributes. But this would make the code more complex. More mixins would increase the number of little problems inheritance causes \(i.e. order\).   
 Adding a separate attribute would make the code more verbose as well. 
