@@ -25,3 +25,16 @@ pipenv uninstall psycopg2
 pipenv install psycopg2
 ```
 
+### mongodb connection issue
+
+```bash
+pymongo.errors.ServerSelectionTimeoutError: productiondata-shard-00-00-yiakj.mongodb.net:27017: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1076),productiondata-shard-00-01-yiakj.mongodb.net:27017: 
+[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1076),productiondata-shard-00-02-yiakj.mongodb.net:27017: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1076)
+```
+
+
+
+{% embed url="https://stackoverflow.com/a/45018725" %}
+
+
+
