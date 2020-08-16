@@ -28,8 +28,8 @@ pipenv install psycopg2
 ### mongodb connection issue
 
 ```bash
-pymongo.errors.ServerSelectionTimeoutError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1076),
-[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1076),: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1076)
+pymongo.errors.ServerSelectionTimeoutError:
+
 ```
 
 
