@@ -17,6 +17,8 @@
 * [Mixins](advanced-python-in-the-real-world/mixins.md)
 * [Abstract Classes](advanced-python-in-the-real-world/abstract-classes.md)
 * [Writing Files](advanced-python-in-the-real-world/writing-files.md)
+* [Writing Files](advanced-python-in-the-real-world/writing-files-1.md)
+* [conftest.py](advanced-python-in-the-real-world/conftest.py.md)
 
 ---
 
